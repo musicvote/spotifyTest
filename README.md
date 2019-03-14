@@ -1,8 +1,5 @@
-# Senior Enrichment Project
-
 ## Getting started
 
-1. Fork and clone this repo
 2. `npm install`
 3. Read the rest of this `README.md` carefully - it contains the requirements for the project and the grading rubric that will be used to assess it
 4. Check out the mock-view in the `wireframes` folder to get an idea of what the project _could_ look like
