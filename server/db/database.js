@@ -3,7 +3,7 @@
 // The sole purpose of this module is to establish a connection to your
 // Postgres database by creating a Sequelize instance (called `db`).
 // You shouldn't need to make any modifications here.
-
+//TESTS
 const chalk = require('chalk')
 const Sequelize = require('sequelize')
 const pkg = require('../../package.json')
