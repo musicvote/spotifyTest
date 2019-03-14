@@ -19,7 +19,7 @@ const getSongs = playlist => {
 export const fetchPlaylist = () => {
   return async dispatch => {
     try {
-      const { data } = await axios.get(`/api/songs`);
+      const { data } = await axios.get(`/api/songs/`);
       const action = getSongs(data);
       dispatch(action);
     } catch (error) {
@@ -31,14 +31,16 @@ export const fetchPlaylist = () => {
 //STATE AND REDUCER
 const initialState = {
   songs: [],
+  currSong: {},
 };
-// eslint-disable-next-line complexity
+
 const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_SONGS: {
       return {
         ...state,
-        songs: [...state.songs, action.playlist],
+        songs: [...action.playlist],
+        currSong: state.songs[0],
       };
     }
     default: {

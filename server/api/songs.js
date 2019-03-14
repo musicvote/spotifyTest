@@ -1,9 +1,9 @@
 //get one song
 const router = require('express').Router();
-const Song = require('../db/models/Songs');
+const Song = require('../db/song');
 
 //get song by ID
-//api/songs
+//api/songs/
 router.get('/', async (req, res, next) => {
   try {
     const songList = await Song.findAll();
