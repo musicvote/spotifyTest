@@ -4,7 +4,7 @@ const Root = () => {
   return (
     <div>
       <nav>
-        Welcome!
+        Welcome!!!!
       </nav>
       <main>
         <h1>Welcome to the Margaret Hamilton Academy of JavaScript!</h1>
