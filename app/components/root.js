@@ -1,17 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Player from './Player';
 
 const Root = () => {
+  const songId = '4BdIxxdtdpxaPk3vXYL47G?si=rdmaNQT-ShypeYaXGgGUaA';
   return (
     <div>
-      <nav>
-        Welcome!!!!
-      </nav>
-      <main>
-        <h1>Welcome to the Margaret Hamilton Academy of JavaScript!</h1>
-        <p>This seems like a nice place to get started with some Routes!</p>
-      </main>
+      <h1>Root</h1>
+      <p>list of songs will go here from DB</p>
+      <Player song={songId} />
     </div>
-  )
-}
+  );
+};
 
-export default Root
+export default Root;
