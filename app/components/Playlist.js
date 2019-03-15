@@ -4,6 +4,10 @@ import { fetchPlaylist } from '../reducers/playlistStore';
 import SongCard from './SongCard';
 
 export class Playlist extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   componentDidMount() {
     this.props.fetchedPlaylist();
   }
