@@ -48,9 +48,4 @@ const playlistReducer = (state = initialState, action) => {
     }
   }
 };
-
-// const store = createStore(
-//   Reducer,
-//   composeWithDevTools(applyMiddleware(thunkMiddleware, loggingMiddleware))
-// );
 export default playlistReducer
