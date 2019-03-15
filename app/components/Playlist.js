@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchPlaylist } from '../playlistStore';
+import { fetchPlaylist } from '../reducers/playlistStore';
 import SongCard from './SongCard';
 
 export class Playlist extends React.Component {
@@ -21,7 +21,7 @@ export class Playlist extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  playlist: state.songs,
+  playlist: state.playlistReducer.songs,
 });
 
 const mapDispatchToProps = dispatch => ({
