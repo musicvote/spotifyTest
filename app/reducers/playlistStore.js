@@ -1,8 +1,8 @@
-import { composeWithDevTools } from 'redux-devtools-extension';
-import { createStore, applyMiddleware } from 'redux';
+// import { composeWithDevTools } from 'redux-devtools-extension';
+// import { createStore, applyMiddleware } from 'redux';
+// import loggingMiddleware from 'redux-logger';
+// import thunkMiddleware from 'redux-thunk';
 import axios from 'axios';
-import loggingMiddleware from 'redux-logger';
-import thunkMiddleware from 'redux-thunk';
 
 //ACTION TYPES
 const GET_SONGS = 'GET_SONGS';
@@ -34,7 +34,7 @@ const initialState = {
   currSong: {},
 };
 
-const Reducer = (state = initialState, action) => {
+const playlistReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_SONGS: {
       return {
@@ -49,8 +49,8 @@ const Reducer = (state = initialState, action) => {
   }
 };
 
-const store = createStore(
-  Reducer,
-  composeWithDevTools(applyMiddleware(thunkMiddleware, loggingMiddleware))
-);
-export default store;
+// const store = createStore(
+//   Reducer,
+//   composeWithDevTools(applyMiddleware(thunkMiddleware, loggingMiddleware))
+// );
+export default playlistReducer

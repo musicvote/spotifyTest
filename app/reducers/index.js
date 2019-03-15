@@ -1,12 +1,8 @@
 import { combineReducers } from 'redux';
+import playlistReducer from './playlistStore'
 
-const initialState = {};
-
-const rootReducer = (state = initialState, action) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
+const rootReducer = combineReducers({
+  playlistReducer
+})
 
 export default rootReducer;
